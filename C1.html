@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="jp" >
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>樱の殇</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css"> 
+  <link href='http://cdn.webfont.youziku.com/webfonts/nomal/105786/45817/59f97d2bf629d80ce0bf748c.css' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.2.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style>
+    body{
+      background-color: #e1e8f0;
+
+    }
+    #all{ margin:0 8%;padding:0 1%;background-color:#70e1f5 ;text-align: center;padding-bottom: 30px; }
+		a {
+			color: #fff;
+			margin: 0;
+			text-decoration: none; /* 去除a元素的下划线 */
+			} /* 设置a元素的通用属性 */
+		a:hover, a:focus { color: #f9d423;text-decoration: none; } /* 设置a元素在鼠标悬停及获得焦点时的通用属性 */
+		ul { list-style: none; } /* 设置ul无序列表的通用属性 */
+		nav {padding-top:15px;background:#70e1f5 ; border: #70e1f5 solid 1px; } /* 设置nav导航栏的样式 */
+		nav ul li { display: inline-block; margin: 0 80px; } /* 设置nav导航栏中每个标题li元素的样式 */
+		nav ul li a { font-size: 18px; } /* 设置nav导航栏中每个标题a元素的样式 */
+		.myCarousel{
+      width: 100%;
+      margin: 0 auto;
+    }
+		p{color: white;}
+		#photo{
+			margin:20px auto;
+		}
+		.tokyo{
+		position: absolute;
+		top: 35%;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		color: #fefefe;
+		font-size: 36px;
+		font-family: cursive;
+	  }
+
+	.navbar{
+		background-color: #e3e3e3;
+	}
+	#story{
+		color: white;
+		font-size: 16px;
+		line-height: 25px;
+		margin:50px auto;
+	}
+  #img-a{
+    margin:40px auto;
+  }
+	#video-text{
+		font-size: 50px;
+    font-family: MS Gothic;
+	}
+  #video{position:relative;padding:0 auto;}
+  .footer{
+    padding-top:10px;
+    background-color: gray;
+    color: black;
+    text-align: center;
+  }
+
+	</style>
+</head>
+
+<body> 
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">LAIN</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span>Register</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<div id="all">
+	<header>
+		<nav>
+			<ul>
+				<li class="text-primary"><a  href="#theme">theme</a></li>
+				<li class="text-primary"><a  href="#story">story</a></li>
+				<li class="text-primary"><a  href="#photo">photo</a></li>
+				<li class="text-primary"><a  href="#video">video</a></li>
+			</ul>
+		</nav>	
+	</header>
+
+  <div id="theme">
+  		
+    <!--⬇️轮播-->
+    <div id="myCarousel" class="carousel slide">
+      <!--⬇️轮播图加个导航指标,点击导航指标可以直接跳到相应的图片-->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <!--⬆️轮播图加个导航指标,点击导航指标可以直接跳到相应的图片-->
+    	<div class="carousel-inner">
+    		<div class="item active">
+    			<img src="http://wx1.sinaimg.cn/large/81f937cegy1fkxwst58uuj21kw0t4qv7.jpg" alt="1"   class=" center-block img-thumbnail img-responsive">
+    			<div class="carousel-caption"></div>
+    	  </div>
+    		<div class="item">
+    			<img src="http://wx1.sinaimg.cn/large/81f937cegy1fkxwsw5tfuj21c80y4hdv.jpg" alt="2"  class=" center-block img-thumbnail img-responsive" >
+    			<div class="carousel-caption"></div>
+    		</div>
+    		<div class="item">
+    			<img src="http://wx3.sinaimg.cn/large/81f937cegy1fkxwqli43vj215o0ukqv5.jpg" alt="3"  class=" center-block img-thumbnail img-responsive">
+    			<div class="carousel-caption"></div>
+    		</div>      		      		
+      </div>
+    </div>
+    <!--⬆️轮播-->
+  </div>
+
+  <div id="story">    
+  	<div class="row">
+  		<div class="col-sm-6 col-md-3 col-xs-12">
+  		<header>
+  		    <img src="http://wx4.sinaimg.cn/mw690/81f937cegy1fkx0mueq7nj20nm0gvwhm.jpg" alt=""   class=" center-block  img-responsive img-thumbnail"> 
+  		    <p>ちゃったから</p>
+  		</header>
+  		<p>ねぇ、秒速5センチなんだって</p>
+  	  </div>
+
+  	  <div class="col-sm-6 col-md-3 col-xs-12 ">
+  		<header>
+  		    <img src="http://wx4.sinaimg.cn/mw690/81f937cegy1fkx0mu1fyhj20nm0hpgp5.jpg" alt=""   class=" center-block img-responsive  img-thumbnail">
+  		    <p>で雪みた</p>      			
+  		</header>
+  		<p>いえ、すぐ终わりましたから</p>
+  	  </div>
+
+  	  <div class="col-sm-6 col-md-3 col-xs-12 ">
+  		<header>
+  		    <img src="http://wx4.sinaimg.cn/mw690/81f937cegy1fkx0mueq7nj20nm0gvwhm.jpg" alt=""    class=" center-block img-responsive img-thumbnail">
+  		    <p>くのでしょ</p>      			
+  		</header>
+  		<p>てくのかな</p>
+  	  </div>
+
+      <div class="col-sm-6 col-md-3 col-xs-12 ">
+  		<header>
+  		    <img src="http://wx1.sinaimg.cn/mw690/81f937cegy1fkx0mu6m7lj20nm0hb42v.jpg" alt=""   class=" center-block img-responsive img-thumbnail">
+  		    <p>どうやってのかな</p>      			
+  		</header>
+  		<p>でも今日は独りみたい</p>
+  	  </div> 
+  	</div>     	      	      	  
+  </div>
+
+	<div id="photo">
+		<p >
+			今度は隆贵くんの転校が决まったということ、惊きました。お互いに昔から転校には惯れているわけですが、それにしても鹿児岛だなんて…。 今度はちょっと远いよね。いざという时に、电车に乗って会いに行けるような距离がなくなってしまうのは、やっぱり少し…ちょっと寂しいです。どうかどうか、隆贵くんが元気でいますように。
+		</p>
+
+		<img src="http://wx3.sinaimg.cn/large/81f937cegy1fkxwqv79j6j20r81aox6p.jpg"  class="img-responsive center-block img-thumbnail" alt="sry to not found 404 QAQ">
+
+	<div class="row" id="img-a">
+    <div class="col-sm-6 col-md-3 col-xs-12">
+        <a href="#" class="thumbnail">
+            <img src="http://wx2.sinaimg.cn/mw690/81f937cegy1fkx2qdk4fpj20xc0ir1kx.jpg"
+                 alt="H">
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-3 col-xs-12">
+        <a href="#" class="thumbnail">
+            <img src="http://wx2.sinaimg.cn/mw690/81f937cegy1fkx2q3rkukj20zk0k0ndp.jpg"
+                 alt="E">
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-3 col-xs-12">
+        <a href="#" class="thumbnail">
+            <img src="http://wx2.sinaimg.cn/mw690/81f937cegy1fkx2pgizq6j20r80fbaii.jpg"
+                 alt="L">
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-3 col-xs-12">
+        <a href="#" class="thumbnail">
+            <img src="http://wx2.sinaimg.cn/mw690/81f937cegy1fkx2qjwkwdj20rs0fnqp5.jpg"
+                 alt="L">
+        </a>
+    </div>
+  </div>
+
+  </div>  
+
+  <div id="video" class="video">
+    <hr>
+    <iframe src="https://www.youtube.com/embed/YO5a7X7e-Wg" style="width: 70%;height: 300px" frameborder="0" allowfullscreen >   
+    </iframe>
+    <div>
+        <hr>
+    	  <p id="video-text">東京イメージ</p>
+        <br>
+        <br>
+    		<div class="row">
+        <div class="col-sm-6 col-md-3">
+            <a href="https://www.bilibili.com/video/av1084855/" class="thumbnail">
+                <img src="https://i2.hdslb.com/bfs/archive/516dc1a7405aa9749d6acc727186d419a991f237.jpg@380w_240h_75Q_1c.webp"
+                     alt="东京印象-春">  
+                <p class="tokyo">はる</p>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <a href="https://www.bilibili.com/video/av1604368/" class="thumbnail">
+                <img src="https://i2.hdslb.com/bfs/archive/62c6951628d5f3328d19e0e7b067ee4c81440947.jpg@380w_240h_75Q_1c.webp"
+                     alt="东京印象-夏">
+                <p class="tokyo">なつ</p>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <a href="https://www.bilibili.com/video/av1940049/" class="thumbnail">
+                <img src="https://i2.hdslb.com/bfs/archive/80dfd14bd6221adcd8399ca003b9182d80f77dba.jpg@380w_240h_75Q_1c.webp"
+                     alt="东京印象-秋">
+                <p class="tokyo">あき</p>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <a href="https://www.bilibili.com/video/av2351378/" class="thumbnail">
+                <img src="https://i2.hdslb.com/bfs/archive/6a9865f5b8f316665fa5d28254c7165d929383f0.jpg@380w_240h_75Q_1c.webp"
+                     alt="东京印象-冬">
+                <p class="tokyo">ふゆ</p>
+            </a>
+        </div>
+    </div>
+
+    <div>
+      <br>
+      <p class="text-right" style="margin-right:50px">
+        <span>桜の花の落ちるスピード     秒速５センチメートル</span><br>
+        <span>--于2017 桜花抄 </span>
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+
+  <div >
+  <hr>
+  <footer class="footer">
+    <h1 ><a href="https://codepen.io/" target="_blank">ØYØ</a></h1>
+    <a class="button-square button-jump-top js-jump-top" href="#" ><i class="fa fa-angle-up"></i></a>
+    <p class="footer-copyright"><b>&copy; 2017</b> / Powered by <a href="https://github.com/Kippom" target="_blank">Kippom</a></p>
+  </footer>
+  </div>
+  
+<!--⬇️JS控制轮播效果-->
+  <script>
+    $(function(){
+      $('.carousel').carousel({
+      interval:2000,//轮播效果每2秒执行一次
+      wrap:true  //让轮播图连续循环         
+      })
+    })
+  </script>
+<!--⬆️JS控制轮播效果-->
+</body>
+</html>
