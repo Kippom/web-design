@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>记事簿</title>
+	<script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+	<style>
+		html{
+			background:url(http://wx3.sinaimg.cn/large/6102ada2gy1fi5ga93gu9j20k00ckgnf.jpg)  fixed  top;
+			font-family: FZYouMaoZaiS-R-c37b8bf5a19d3a；
+		}
+		body{
+			width: 1000px; 
+			margin: 0 auto;
+		}
+		div{
+			text-align: center
+		}
+		#div1{
+			width: 400px;
+			height: 500px;
+			background-color: #E0E0E0;
+			border-radius: 10px;
+			position: absolute;
+			top: 68px;
+			left: 32px;
+			overflow-y:scroll;
+			white-space: nowrap;
+			
+		}
+		#history{
+			position: absolute;
+			left: 5px;
+			width: 300px;
+		}
+		h1{color: white;}
+	</style>
+</head>
+
+<body>
+<div>
+	<h1>ACCA记事簿</h1>
+	<p >标题：</p>
+	<input type="text" id="title"></input>
+	<p >内容</p>
+	<textarea id="content" cols="60" rows="20" " ></textarea>
+	<p><button id="submit">提交</button></p>	
+	<div id="div1">
+		<p>以往内容</p>
+		<div id="history"></div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	var submit=document.getElementById("submit");
+	submit.onclick=subclick;
+	function subclick(){
+		var title_element=document.getElementById("title");
+		var title=title_element.value;
+		var conten_element=document.getElementById("content");
+		var content=conten_element.value;
+
+		var history_element=document.getElementById("history");
+		var history=history_element.innerHTML;
+		history=history+"<p>标题："+title+"</p>";
+		history=history+"<p>内容："+content+"</p>";
+		history=history+"<hr>";
+		//alert(history);
+		history_element.innerHTML=history;
+		
+		//alert(title);
+		//alert(content);
+	}
+</script>
+
+<script type="text/javascript">
+   $youziku.load("body", "43450086d5784b41bc2437b40dbc3a99", "kittyyuanshimaomizhongwen");
+   /*$youziku.load("#id1,.class1,h1", "43450086d5784b41bc2437b40dbc3a99", "kittyyuanshimaomizhongwen");*/
+   /*．．．*/
+   $youziku.draw();
+</script>
+</body>
+</html>
+

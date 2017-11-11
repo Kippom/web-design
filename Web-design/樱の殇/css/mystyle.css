@@ -1,0 +1,90 @@
+body{
+    background-color: #e1e8f0;
+}
+#all{ margin:0 8%;
+	padding:0 1%;
+	background-color:#70e1f5;
+	text-align: center;
+	padding-bottom: 30px; }
+a{
+	color: #fff;
+	margin: 0;
+	text-decoration: none; 
+} 
+a:hover, a:focus{ 
+	color: #f9d423;
+	text-decoration: none; 
+} /* 设置a元素在鼠标悬停及获得焦点时的通用属性 */
+ul{ 
+	list-style: none; 
+} /* 设置ul无序列表的通用属性 */
+nav{
+	padding-top:15px;
+	background:#70e1f5; 
+	border: #70e1f5 solid 1px; 
+} /* 设置nav导航栏的样式 */
+nav ul li{ 
+	display: inline-block; 
+	margin: 0 80px; 
+} 
+nav ul li a{ 
+	font-size: 18px; 
+} 
+.myCarousel{
+  	width: 100%;
+  	margin: 0 auto;
+}
+p{
+	color: white;
+}
+#story{
+	margin:20px auto;
+}
+.story p{
+	padding: 0 50px;
+	letter-spacing: 1px;
+	line-height: 24px;
+	text-indent: 32px;
+	margin-bottom: 16px;
+	text-align: left;
+}
+.tokyo{
+	position: absolute;
+	top: 35%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	color: #fefefe;
+	font-size: 36px;
+	font-family: cursive;
+}
+.navbar{
+	background-color: #e3e3e3;
+}
+#photo{
+	color: white;
+	font-size: 16px;
+	line-height: 25px;
+	margin:50px auto;
+}
+#img-a{
+	margin:40px auto;
+}
+#video-text{
+	font-size: 50px;
+	font-family: MS Gothic;
+}
+#video{
+	position:relative;
+	padding:0 auto;
+}
+.b{
+	width: 60%;
+	height: 350px;
+}
+.footer{
+	padding-top:10px;
+	background-color: gray;
+	color: black;
+	text-align: center;
+}
